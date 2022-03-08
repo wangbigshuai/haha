@@ -1,0 +1,21 @@
+<html>
+<script language="JavaScript">
+function changFont( x ){
+    var font_style = x;
+    var article = document.getElementById("article");
+    if( typeof font_style == "string" ){
+        article.style.color = font_style;
+    }
+}
+</script>
+<body>
+<p>
+<a onClick="changFont('black');">黑色</a> <a onClick="changFont('red');">红色</a>
+<a onClick="changFont('blue');">蓝色</a>
+</p>
+<p id="article">
+我是一些文字 ...<br />
+Some Text ...
+</p>
+</body>
+</html>
